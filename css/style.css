@@ -1,0 +1,254 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*::before,*::after{
+	box-sizing: border-box;
+}
+.container {
+	width: 940px;
+	margin: 0 auto;	
+	font-family: 'PingFang TC', 'Semibold';
+}
+
+a {
+	text-decoration: none;
+}
+img {
+	display: block;
+	font-size: 0;
+}
+.header	{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.header .cart {
+	height: 24px;
+	width: 24px;
+}
+.header img {
+	height: 40px;
+	
+}
+
+.header .menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style:none;
+}
+
+.header .menu-item {
+	color: #3F5D45;
+	padding-right:40px;
+    font-weight: bold;
+}
+
+.header .menu a {
+	display: block;
+	
+}
+
+.banner {
+	margin-bottom: 60px;
+}
+.nav {
+	margin-right: 10px;
+}
+.nav li  {
+	width: 300px;
+	text-align: center;
+	padding: 16px 0 16px 0;
+	
+}
+
+.nav h2{
+	background-color: #3F5D45;	
+	color:#fff;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 16px 0 16px 0;
+}
+
+.nav .catogory a {
+	color:#fff;
+	
+}
+
+.nav li a {
+	display: block;
+	font-size: 24px;
+	font-weight: bold;
+	
+}
+
+.nav .primary {
+	border: 1px solid #EAF0ED;
+}
+.nav .primary a {
+	color:#3F5D45;
+
+}
+
+.nav .primary:hover {
+	background: #EAF0ED;
+
+}
+
+.main {
+	display: flex;
+	justify-content: space-between;
+}
+.content {
+	width: 620px;	
+}
+
+.productList{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+.product-item{
+	width: 300px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.tag {
+	display: block;
+   position: absolute;
+   width: 36px;
+   background-color: #3F5D45;
+   color: #fff;
+   padding: 10px;;
+   left: 20px;
+   line-height: 22px;
+
+}
+
+.heart {
+	display: block;
+   position: absolute;
+   top:18px;
+   right:18px;
+}
+
+.product-itemBody 
+{
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	line-height: 56px;
+}
+
+.product-itemBody p {
+	display:inline;
+   text-align: center;
+   color: #3F5D45;
+   width: 173px;
+	font-size: 20px;
+	border:1px solid #EAF0ED;
+ }
+
+ .product-itemBody span {
+	 display:block;
+	 text-align: center;
+	 width: 127px;
+	 color: #3F5D45;
+	 font-size: 20px;
+	 font-weight: bold;
+	 border:1px solid #EAF0ED;
+  }
+ 
+ .product-item .addCart {
+	 display: block;
+	 width: 300px;
+	 text-align: center;
+	 line-height: 65px;
+	 font-size: 24px;
+	 font-weight: bold;
+	 color: #3F5D45;
+	 background-color: #EAF0ED;
+ }
+ 
+ .pageList {
+	 display: flex;
+	 justify-content: flex-end;
+ }
+ 
+.pageBody {
+	display: flex;
+}
+.pageBody li {
+	text-align: center;
+	
+}
+.pageBody a{
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	color:#3F5D45;
+	width: 59px;
+    height: 60px;
+	font-size: 20px;
+	border:1px solid #EAF0ED;
+
+}
+
+.pageBody a.active {
+  background-color: #3F5D45;
+  color:#EAF0ED;
+}
